@@ -1,0 +1,15 @@
+html,body{
+    height: 100%;
+}
+html {
+    font-size: 62.5%
+}
+
+body {
+    color: $color_white;
+    font-family: $family_base;
+    -webkit-font-smoothing: antialiased;
+    @include font-size;
+    letter-spacing: .06rem;
+    line-height: $lineHeight;
+}

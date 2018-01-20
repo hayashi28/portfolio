@@ -1,0 +1,52 @@
+@mixin font-size($s:$font) {
+    font-size: ($s * 10) + px;
+    font-size: $s + rem;
+}
+@mixin clearfix() {
+    &:after,
+    &:before {
+        content: " ";
+        display: table;
+    }
+
+    &:after {
+        clear: both;
+    }
+}
+@mixin iconfont($f) {
+    content: $f;
+    font-family: "icon";
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    speak: none;
+    line-height: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+@mixin p_style {
+     @media print{
+        @content;
+    }
+}
+@mixin sp_style {
+     @media only screen and (max-width: $size_breakpoint_sp - 1){
+        @content;
+    }
+}
+@mixin tb_style {
+     @media only screen and (min-width: $size_breakpoint_sp) and (max-width: $size_breakpoint_tb){
+        @content;
+    }
+}
+@mixin pc_style {
+     @media only screen and (min-width: $size_breakpoint_tb + 1){
+        @content;
+    }
+}
+@mixin hd_style {
+     @media only screen and (min-width: $size_breakpoint_pc + 1) and (max-width: $size_breakpoint_hd){
+        @content;
+    }
+}

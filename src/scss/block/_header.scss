@@ -1,0 +1,180 @@
+section {
+  margin-bottom: 80px;
+}
+
+.keyvisual {
+  width: 100%;
+  height: 560px;
+  background-color: $color_key;
+  &__main {
+    font-size: 3.5rem;
+    font-family: 'Noto Sans CJK JP', sans-serif;
+    font-weight: 700;
+    padding-top: 200px;
+    text-align: center;
+
+    @include sp_style {
+      font-size: 3rem;
+    }
+    p {
+      color: $color-white;
+      z-index: 2;
+    }
+  }
+  &__sub {
+    font-size: 2rem;
+    text-align: center;
+    font-family: 'Noto Sans CJK JP', sans-serif;
+    font-weight: 500;
+
+    @include sp_style {
+      font-size: 1.8rem;
+    }
+  }
+}
+
+.works {
+  margin: 0 auto;
+  &__main {
+    display: flex;
+    justify-content: center;
+
+    @include tb_style {
+      flex-direction: column;
+    }
+
+    @include sp_style {
+      flex-direction: column;
+    }
+    &__thumb {
+      margin: 0 20px;
+
+      @include tb_style {
+        margin: 20px auto;
+      }
+
+      @include sp_style {
+        margin: 20px auto;
+      }
+    }
+    img {
+      width: 360px;
+      opacity: 1;
+      -webkit-transition: .3s ease-in-out;
+      transition: .3s ease-in-out;
+    }
+    &__title {
+      font-family: 'Noto Sans CJK JP', sans-serif;
+      font-weight: 700;
+      font-size: 2rem;
+      color: $color-black;
+      margin-top: 10px;
+
+      @include sp_style {
+        font-size: 1.8rem;
+      }
+    }
+    &__desc {
+      font-family: 'Noto Sans CJK JP', sans-serif;
+      font-weight: 400;
+      font-size: 1.5rem;
+      color: $color-black;
+      line-height: 1.5;
+      margin-top: 5px;
+
+      @include sp_style {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  -webkit-align-items: center;
+          align-items: center;
+  align-items: stretch;
+  @include sp_style {
+    flex-direction: column;
+  }
+  &__main {
+    margin-left: 45px;
+
+    @include sp_style {
+      width: 80%;
+      margin: 0 auto;
+    }
+    &__head {
+      font-size: 2.0rem;
+      font-family: 'Noto Sans CJK JP', sans-serif;
+      font-weight: 700;
+      color: $color-black;
+      margin-bottom: 20px;
+
+      @include sp_style {
+        font-size: 1.8rem;
+        text-align: center;
+      }
+    }
+    &__desc {
+      font-size: 1.5rem;
+      font-family: 'Noto Sans CJK JP', sans-serif;
+      font-weight: 400;
+      color: $color-black;
+      line-height: 1.5;
+      margin-bottom: 30px;
+
+      @include sp_style {
+        font-size: 1.2rem;
+      }
+    }
+    &__career {
+      font-size: 1.5rem;
+      font-family: 'Noto Sans CJK JP', sans-serif;
+      font-weight: 700;
+      color: $color-black;
+
+      @include sp_style {
+        font-size: 1.2rem;
+      }
+    }
+  }
+  &__sub {
+    @include sp_style {
+      margin: 0 auto;
+    }
+    img {
+      width: 180px;
+    }
+  }
+}
+
+
+.contact {
+  &__sub {
+    font-size: 1.5rem;
+    font-family: 'Noto Sans CJK JP', sans-serif;
+    font-weight: 500;
+    color: $color-black;
+    text-align: center;
+    @include sp_style {
+      font-size: 1.2rem;
+    }
+  }
+  &__main {
+    &__list {
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+      li {
+        margin: 30px 20px 0;
+        img {
+          width: 45px;
+        }
+      }
+    }
+  }

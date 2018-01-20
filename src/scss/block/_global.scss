@@ -1,0 +1,118 @@
+::selection {
+  background-color: $color_key;
+  color: $color_base;
+}
+
+body {}
+
+.wrapper {
+  //基本的に優先デバイスの記述を先に書く
+  //優先でないデバイスはsp_style tb_style pc_style などで上書き記述
+  //例：SP優先　tb と pc が必要
+  //例：PC優先　sp と tb　が必要
+  background-color: #ccc;
+  padding: 60px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  // justify-content: center;
+  // align-items: flex-end;
+  @include tb_style {
+    display: block;
+    justify-content: inherit;
+  }
+}
+
+@include pc_style {
+  .invisible_pc {
+    display: none;
+  }
+}
+
+@include tb_style {
+  .invisible_sp {
+    display: none;
+  }
+}
+
+.header {
+  background-color: #666;
+  // flex-basis: 300px;
+}
+
+.container {
+  background-color: #333;
+  // flex-basis: 300px;
+}
+
+.footer {
+  background-color: #666;
+  flex-basis: 300px;
+}
+
+.column2 {
+  display: flex;
+
+  &__item {
+    flex: 1;
+    height: 1000px;
+    background-color: #fff;
+    color: $color_base;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__inner {
+    max-width: 500px;
+    padding: 40px;
+    margin-left: auto;
+    font-size: 1.6vw;
+  }
+}
+
+.img {
+  img {
+    vertical-align: middle;
+  }
+}
+
+.title {
+  font-size: 3rem;
+  font-family: 'Noto Sans CJK JP', sans-serif;
+  font-weight: 700;
+  color: $color-black;
+  text-align: center;
+  margin: 120px 0 80px 0;
+
+  @include sp_style {
+    font-size: 2.4rem;
+    margin: 80px 0 40px 0;
+  }
+}
+
+.works__main__thumb {
+  img:hover {
+    opacity: .5;
+  }
+}
+
+.individual-bubble {
+  width: 100px;
+  margin: 0 auto;
+  position: absolute;
+  border-radius: 100%;
+  bottom: 200px;
+  background-color: $color-white;
+  z-index: 1;
+}
+
+.l-transition__all {
+  margin: 0 -300px;
+}
+
+strong {
+  font-weight: 700;
+  color: #000000;
+}

@@ -1,0 +1,19 @@
+.button::before,
+.button::after {
+  position: absolute;
+  z-index: -1;
+  display: block;
+  content: '';
+}
+.button,
+.button::before,
+.button::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+.button:hover {
+  background-color: #FF9F17;
+}
