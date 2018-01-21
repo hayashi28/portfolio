@@ -39,3 +39,13 @@ jQuery(document).ready(function($){
     }, 350);
 
 });
+
+(function($) {
+    $(function() {
+        var $header = $('#top-head');
+        // Nav Toggle Button
+        $('#nav-toggle').click(function(){
+            $header.toggleClass('open');
+        });
+    });
+})(jQuery);

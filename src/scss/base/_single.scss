@@ -14,13 +14,16 @@
     }
   }
   &__main {
-    width: 800px;
     display: -webkit-flex;
     display: -ms-flex;
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 0 22% 0;
+
+    @include sp_style {
+      margin: 0 22% 0;
+    }
     a {
       font-family: 'Noto Sans CJK JP', sans-serif;
       font-weight: 700;
@@ -53,14 +56,24 @@
       font-size: 1.5rem;
       color: $color-black;
       padding: 20px 0 0;
+
+      @include sp_style {
+        font-size: 1.2rem;
+        margin: 0 auto;
+      }
     }
   }
   &__detail {
     text-align: center;
     &__thumb {
-      margin: 80px 0 40px;
+      margin: 80px auto 40px;
+
       img {
         width: 800px;
+
+        @include sp_style {
+          width: 90%;
+        }
       }
     }
     &__desc {
@@ -70,6 +83,12 @@
       color: $color-black;
       margin: 0 22% 0;
       text-align: left;
+
+      @include sp_style {
+        font-size: 1.2rem;
+        margin: 0 auto;
+        margin: 0 22% 0;
+      }
     }
   }
   hr {
@@ -78,6 +97,11 @@
     border: none;
     border-top: 1px $color-black solid;
     margin: 80px auto 80px;
+
+    @include sp_style {
+      width: 80%;
+      margin: 40px auto 40px;
+    }
   }
 }
 
@@ -94,6 +118,11 @@
     color: $color-black;
     text-decoration: none;
     margin: 0 -320px;
+
+    @include sp_style {
+      font-size: 0.8rem;
+      margin: 0 -10px;
+    }
   }
   &__previous {
     font-family: 'Noto Sans CJK JP', sans-serif;
@@ -101,6 +130,10 @@
     font-size: 1.2rem;
     color: $color-black;
     text-decoration: none;
+
+    @include sp_style {
+      font-size: 0.8rem;
+    }
   }
   &__next {
     font-family: 'Noto Sans CJK JP', sans-serif;
@@ -108,5 +141,9 @@
     font-size: 1.2rem;
     color: $color-black;
     text-decoration: none;
+
+    @include sp_style {
+      font-size: 0.8rem;
+    }
   }
 }
