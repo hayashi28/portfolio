@@ -416,6 +416,11 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
 }
+@media only screen and (max-width: 599px) {
+  .intro__sub img img {
+    height: 300px;
+  }
+}
 .intro__main {
   display: -ms-flex;
   display: -webkit-box;

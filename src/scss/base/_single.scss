@@ -11,6 +11,12 @@
       width: 100%;
       height: auto;
       object-fit: cover;
+
+      @include sp_style {
+        img {
+          height: 300px;
+        }
+      }
     }
   }
   &__main {
