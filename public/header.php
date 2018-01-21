@@ -23,10 +23,10 @@
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <link rel="icon" href="favicon.ico" type="image/ico">
     <link rel="apple-touch-icon" href="app-icon.png">
-    <link rel="stylesheet" media="all" href="/assets/css/index.css">
+    <link rel="stylesheet" media="all" href="assets/css/index.css">
     <link rel="canonical" href="">
-    <script src="/assets/js/jquery.js"></script>
-    <script src="/assets/js/app.js"></script>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/app.js"></script>
 </head>
 <body>
 
