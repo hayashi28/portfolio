@@ -13,7 +13,6 @@
 }
 
 #top-head {
-    position: absolute;
     width: 100%;
     line-height: 1;
     z-index: 999;
@@ -94,12 +93,18 @@
   }
 }
 
-@include sp_style {
-
+#s-mobile-head {
+  @include sp_style {
+    background-color: #D2DAE2;
+    width: 100%;
+    height: 56px;
+    z-index: 999;
+    position: relative;
+  }
 }
+
+
 #global-nav {
-  position: absolute;
-  /* 開いてないときは画面外に配置 */
   width: 100%;
   text-align: center;
   -webkit-transition: .5s ease-in-out;
@@ -136,6 +141,12 @@
     -moz-transform: translateY(556px);
     -webkit-transform: translateY(556px);
     transform: translateY(556px);
+}
+
+#home {
+  position: absolute;
+  top: 21px;
+  left: 20px;
 }
 
 .header__nav {
@@ -230,86 +241,28 @@
   }
 }
 
-.single__nav {
-  width: 100%;
-  &__menu {
-    display: -webkit-flex;
-    display: -ms-flex;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    margin-right: 15px;
-    li {
-      margin: 20px 20px 0;
-      a {
-        font-family: 'Noto Sans CJK JP', sans-serif;
-        font-weight: 700;
-        font-size: 1.2rem;
-        text-decoration: none;
-        color: $color-black;
-        position: relative;
-        display: inline-block;
-        &:after {
-          position: absolute;
-          top: 20px;
-          bottom: 2px;
-          left: 0;
-          content: '';
-          width: 100%;
-          height: 1px;
-          background: $color-black;
-          opacity: 0;
-          visibility: hidden;
-          transition: .3s;
-        }
-        &:hover::after {
-          bottom: -4px;
-          opacity: 1;
-          visibility: visible;
-        }
-      }
-    }
-  }
-}
-
 .single__header {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  height: 80px;
-  background-color: $color_thumb;
-  padding: 0 20px;
-  &__home {
-    font-family: 'Noto Sans CJK JP', sans-serif;
-    font-weight: 700;
-    font-size: 1.2rem;
-    color: $color-black;
-    text-decoration: none;
-    margin: -23px 0 0 25px;
-
-    @include sp_style {
-      display: none;
-    }
-  }
   &__nav {
-    margin: -45px 0 0 auto;
+    width: 100%;
+    height: 90px;
+    background-color: #D2DAE2;
+    margin-right: 10px;
 
     @include sp_style {
       display: none;
     }
     ul {
       display: flex;
-      flex-wrap: wrap;
-      padding: 0;
+      flex-direction: row;
+      justify-content: flex-end;
       li {
         margin: 20px 20px 0;
-        list-style: none;
         a {
           font-family: 'Noto Sans CJK JP', sans-serif;
           font-weight: 700;
           font-size: 1.2rem;
           text-decoration: none;
-          color: $color-black;
+          color: $color-white;
           position: relative;
           display: inline-block;
           &:after {
@@ -320,7 +273,7 @@
             content: '';
             width: 100%;
             height: 1px;
-            background: $color-black;
+            background: $color-white;
             opacity: 0;
             visibility: hidden;
             transition: .3s;
