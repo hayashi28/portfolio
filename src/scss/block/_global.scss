@@ -29,6 +29,12 @@ body {}
   }
 }
 
+@include tb_style {
+  .invisible_pc {
+    display: none;
+  }
+}
+
 @include sp_style {
   .invisible_sp {
     display: none;

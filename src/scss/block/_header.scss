@@ -63,6 +63,10 @@ section {
       opacity: 1;
       -webkit-transition: .3s ease-in-out;
       transition: .3s ease-in-out;
+
+      @include sp_style {
+        width: 320px;
+      }
     }
     &__title {
       font-family: 'Noto Sans CJK JP', sans-serif;

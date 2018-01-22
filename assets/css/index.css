@@ -416,6 +416,16 @@ body {
   -o-object-fit: contain;
      object-fit: contain;
 }
+@media only screen and (min-width: 961px) {
+  .intro__sub img img {
+    display: none;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 960px) {
+  .intro__sub img img {
+    display: none;
+  }
+}
 @media only screen and (max-width: 599px) {
   .intro__sub img img {
     width: 100%;
@@ -703,6 +713,11 @@ section {
   opacity: 1;
   transition: .3s ease-in-out;
 }
+@media only screen and (max-width: 599px) {
+  .works__main img {
+    width: 320px;
+  }
+}
 .works__main__title {
   font-family: 'Noto Sans CJK JP', sans-serif;
   font-weight: 700;
@@ -890,6 +905,11 @@ section {
 }
 
 @media only screen and (min-width: 961px) {
+  .invisible_pc {
+    display: none;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 960px) {
   .invisible_pc {
     display: none;
   }

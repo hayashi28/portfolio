@@ -12,6 +12,18 @@
       height: auto;
       object-fit: contain;
 
+      @include pc_style {
+        img {
+          display: none;
+        }
+      }
+
+      @include tb_style {
+        img {
+          display: none;
+        }
+      }
+
       @include sp_style {
         img {
           width: 100%;
