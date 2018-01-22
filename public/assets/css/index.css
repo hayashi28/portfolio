@@ -594,7 +594,7 @@ body {
 @media only screen and (min-width: 961px) {
   .transition__previous {
     font-size: 1.2rem;
-    margin: 0 220px;
+    margin: 0 200px;
   }
 }
 @media only screen and (min-width: 600px) and (max-width: 960px) {
@@ -618,7 +618,7 @@ body {
 @media only screen and (min-width: 961px) {
   .transition__next {
     font-size: 1.2rem;
-    margin: 0 220px;
+    margin: 0 200px;
   }
 }
 @media only screen and (min-width: 600px) and (max-width: 960px) {
