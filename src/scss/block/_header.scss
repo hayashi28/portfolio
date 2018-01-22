@@ -115,6 +115,7 @@ section {
       @include sp_style {
         font-size: 1.8rem;
         text-align: center;
+        margin: 20px 0;
       }
     }
     &__desc {
@@ -127,6 +128,7 @@ section {
 
       @include sp_style {
         font-size: 1.2rem;
+        margin-bottom: 20px;
       }
     }
     &__career {
