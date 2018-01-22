@@ -413,8 +413,8 @@ body {
 .intro__sub img {
   width: 100%;
   height: auto;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 @media only screen and (max-width: 599px) {
   .intro__sub img img {
@@ -435,9 +435,16 @@ body {
           justify-content: center;
   margin: 0 22% 0;
 }
+@media only screen and (min-width: 600px) and (max-width: 960px) {
+  .intro__main {
+    width: 80%;
+    margin: 0 10% 0;
+  }
+}
 @media only screen and (max-width: 599px) {
   .intro__main {
-    margin: 0 22% 0;
+    width: 80%;
+    margin: 0 10% 0;
   }
 }
 .intro__main a {
@@ -619,7 +626,7 @@ section {
 
 .keyvisual {
   width: 100%;
-  height: 560px;
+  height: 600px;
   background-color: #7DC3E6;
 }
 .keyvisual__main {
@@ -631,6 +638,7 @@ section {
 }
 @media only screen and (max-width: 599px) {
   .keyvisual__main {
+    padding-top: 250px;
     font-size: 3rem;
   }
 }
@@ -746,6 +754,12 @@ section {
 .about__main {
   margin-left: 45px;
 }
+@media only screen and (min-width: 600px) and (max-width: 960px) {
+  .about__main {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
 @media only screen and (max-width: 599px) {
   .about__main {
     width: 80%;
@@ -758,6 +772,13 @@ section {
   font-weight: 700;
   color: #4A4A4A;
   margin-bottom: 20px;
+}
+@media only screen and (min-width: 600px) and (max-width: 960px) {
+  .about__main__head {
+    font-size: 2rem;
+    text-align: center;
+    margin: 20px 0;
+  }
 }
 @media only screen and (max-width: 599px) {
   .about__main__head {
@@ -773,6 +794,12 @@ section {
   color: #4A4A4A;
   line-height: 1.5;
   margin-bottom: 30px;
+}
+@media only screen and (min-width: 600px) and (max-width: 960px) {
+  .about__main__desc {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
 }
 @media only screen and (max-width: 599px) {
   .about__main__desc {
@@ -867,7 +894,7 @@ section {
     display: none;
   }
 }
-@media only screen and (min-width: 600px) and (max-width: 960px) {
+@media only screen and (max-width: 599px) {
   .invisible_sp {
     display: none;
   }
@@ -1046,8 +1073,18 @@ strong {
           flex-direction: row;
   margin-left: 1.9%;
 }
+@media only screen and (max-width: 599px) {
+  .footer__nav__menu {
+    margin-left: 5%;
+  }
+}
 .footer__nav__menu li {
   padding: 20px 20px 23px;
+}
+@media only screen and (max-width: 599px) {
+  .footer__nav__menu li {
+    padding: 20px 20px 20px;
+  }
 }
 .footer__nav__menu li a {
   font-family: 'Noto Sans CJK JP', sans-serif;
@@ -1057,6 +1094,11 @@ strong {
   color: #4A4A4A;
   position: relative;
   display: inline-block;
+}
+@media only screen and (max-width: 599px) {
+  .footer__nav__menu li a {
+    font-size: 0.8rem;
+  }
 }
 .footer__nav__menu li a:after {
   position: absolute;
