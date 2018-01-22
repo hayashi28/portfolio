@@ -488,14 +488,19 @@ body {
   text-align: center;
 }
 .intro__detail__thumb {
-  margin: 40px auto 20px;
+  margin: 80px auto 40px;
+}
+@media only screen and (max-width: 599px) {
+  .intro__detail__thumb {
+    margin: 40px auto 20px;
+  }
 }
 .intro__detail__thumb img {
   width: 80%;
 }
 @media only screen and (min-width: 961px) {
   .intro__detail__thumb img {
-    width: 60%;
+    width: 56%;
   }
 }
 .intro__detail__desc {
@@ -508,7 +513,7 @@ body {
 }
 @media only screen and (min-width: 961px) {
   .intro__detail__desc {
-    margin: 0 20% 0;
+    margin: 0 22% 0;
   }
 }
 @media only screen and (min-width: 600px) and (max-width: 960px) {
@@ -531,7 +536,7 @@ body {
 }
 @media only screen and (min-width: 961px) {
   .intro hr {
-    width: 60%;
+    width: 56%;
   }
 }
 @media only screen and (min-width: 600px) and (max-width: 960px) {
@@ -594,7 +599,7 @@ body {
 @media only screen and (min-width: 961px) {
   .transition__previous {
     font-size: 1.2rem;
-    margin: 0 200px;
+    margin: 0 270px;
   }
 }
 @media only screen and (min-width: 600px) and (max-width: 960px) {
@@ -618,7 +623,7 @@ body {
 @media only screen and (min-width: 961px) {
   .transition__next {
     font-size: 1.2rem;
-    margin: 0 200px;
+    margin: 0 270px;
   }
 }
 @media only screen and (min-width: 600px) and (max-width: 960px) {
