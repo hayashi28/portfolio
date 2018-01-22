@@ -488,7 +488,7 @@ body {
   text-align: center;
 }
 .intro__detail__thumb {
-  margin: 80px auto 40px;
+  margin: 40px auto 20px;
 }
 .intro__detail__thumb img {
   width: 80%;
@@ -542,7 +542,7 @@ body {
 @media only screen and (max-width: 599px) {
   .intro hr {
     width: 80%;
-    margin: 40px auto 40px;
+    margin: 60px auto 60px;
   }
 }
 
