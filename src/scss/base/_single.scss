@@ -80,6 +80,12 @@
 
       img {
         width: 80%;
+        }
+
+      @include pc_style {
+        img {
+          width: 60%;
+        }
       }
     }
     &__desc {
@@ -91,7 +97,7 @@
       text-align: left;
 
       @include pc_style {
-        margin: 0 10% 0;
+        margin: 0 20% 0;
       }
 
       @include tb_style {
@@ -112,7 +118,7 @@
     margin: 80px auto 80px;
 
     @include pc_style {
-      width: 80%;
+      width: 60%;
     }
 
     @include tb_style {
@@ -164,7 +170,7 @@
 
     @include pc_style {
       font-size: 1.2rem;
-      margin: 0 -110px;
+      margin: 0 220px;
     }
 
     @include tb_style {
@@ -185,7 +191,7 @@
 
     @include pc_style {
       font-size: 1.2rem;
-      margin: 0 -110px;
+      margin: 0 220px;
     }
 
     @include tb_style {
