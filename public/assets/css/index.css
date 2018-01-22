@@ -552,6 +552,7 @@ body {
 }
 
 .transition {
+  width: 56%;
   display: -ms-flex;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -560,8 +561,20 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+}
+@media only screen and (min-width: 600px) and (max-width: 960px) {
+  .transition {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 599px) {
+  .transition {
+    width: 80%;
+  }
 }
 .transition__all {
   font-family: 'Noto Sans CJK JP', sans-serif;
@@ -569,24 +582,10 @@ body {
   font-size: 1.2rem;
   color: #4A4A4A;
   text-decoration: none;
-  margin: 0 -320px;
-}
-@media only screen and (min-width: 961px) {
-  .transition__all {
-    font-size: 1.2rem;
-    margin: 0 -10px;
-  }
-}
-@media only screen and (min-width: 600px) and (max-width: 960px) {
-  .transition__all {
-    font-size: 1.2rem;
-    margin: 0 -10px;
-  }
 }
 @media only screen and (max-width: 599px) {
   .transition__all {
     font-size: 0.8rem;
-    margin: 0 -10px;
   }
 }
 .transition__previous {
@@ -595,18 +594,6 @@ body {
   font-size: 1.2rem;
   color: #4A4A4A;
   text-decoration: none;
-}
-@media only screen and (min-width: 961px) {
-  .transition__previous {
-    font-size: 1.2rem;
-    margin: 0 290px;
-  }
-}
-@media only screen and (min-width: 600px) and (max-width: 960px) {
-  .transition__previous {
-    font-size: 1.2rem;
-    margin: 0 -40px;
-  }
 }
 @media only screen and (max-width: 599px) {
   .transition__previous {
@@ -619,18 +606,6 @@ body {
   font-size: 1.2rem;
   color: #4A4A4A;
   text-decoration: none;
-}
-@media only screen and (min-width: 961px) {
-  .transition__next {
-    font-size: 1.2rem;
-    margin: 0 290px;
-  }
-}
-@media only screen and (min-width: 600px) and (max-width: 960px) {
-  .transition__next {
-    font-size: 1.2rem;
-    margin: 0 -40px;
-  }
 }
 @media only screen and (max-width: 599px) {
   .transition__next {

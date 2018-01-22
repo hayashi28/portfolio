@@ -137,32 +137,31 @@
 }
 
 .transition {
+  width: 56%;
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin: 0 auto;
+
+  @include tb_style {
+    width: 80%;
+  }
+
+  @include sp_style {
+    width: 80%;
+  }
+
   &__all {
     font-family: 'Noto Sans CJK JP', sans-serif;
     font-weight: 700;
     font-size: 1.2rem;
     color: $color-black;
     text-decoration: none;
-    margin: 0 -320px;
-
-    @include pc_style {
-      font-size: 1.2rem;
-      margin: 0 -10px;
-    }
-
-    @include tb_style {
-      font-size: 1.2rem;
-      margin: 0 -10px;
-    }
 
     @include sp_style {
       font-size: 0.8rem;
-      margin: 0 -10px;
     }
   }
   &__previous {
@@ -171,16 +170,6 @@
     font-size: 1.2rem;
     color: $color-black;
     text-decoration: none;
-
-    @include pc_style {
-      font-size: 1.2rem;
-      margin: 0 290px;
-    }
-
-    @include tb_style {
-      font-size: 1.2rem;
-      margin: 0 -40px;
-    }
 
     @include sp_style {
       font-size: 0.8rem;
@@ -193,15 +182,6 @@
     color: $color-black;
     text-decoration: none;
 
-    @include pc_style {
-      font-size: 1.2rem;
-      margin: 0 290px;
-    }
-
-    @include tb_style {
-      font-size: 1.2rem;
-      margin: 0 -40px;
-    }
 
     @include sp_style {
       font-size: 0.8rem;
