@@ -39,3 +39,29 @@ jQuery(document).ready(function($){
     }, 350);
 
 });
+
+$(document).ready(function(){
+    $('#pagetop').click(function () { // .pagetopをクリックすると
+        $('body,html').animate({ // いちばん上にanimateする
+        scrollTop: 0 // 戻る位置
+        }, 400); // 戻るスピード
+        return false;
+    });
+});
+
+$(document).ready(function(){
+    $("#pagetop").hide(); //とりあえず隠す
+    $(window).on("scroll", function() {
+        if ($(this).scrollTop() > 100) { //100以上にスクロールされた／されている時は
+            $("#pagetop").fadeIn("fast"); //ふわっと表示
+        } else { //それ意外は
+            $("#pagetop").fadeOut("fast"); //ふわっと非表示
+        }
+    });
+    $('#pagetop').click(function () {
+        $('body,html').animate({
+        scrollTop: 0
+        }, 400);
+        return false;
+    });
+});

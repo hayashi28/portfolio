@@ -31,9 +31,10 @@
       }
     }
   }
+  &__item {
+    margin: 0 auto;
+  }
   &__main {
-    display: -webkit-flex;
-    display: -ms-flex;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -50,7 +51,7 @@
     }
 
     a {
-      font-family: 'Noto Sans CJK JP', sans-serif;
+      font-family: 'Roboto', sans-serif;
       font-weight: 700;
       font-size: 1.5rem;
       color: $color-black;
@@ -61,26 +62,26 @@
       }
     }
     &__title {
-      font-family: 'Noto Sans CJK JP', sans-serif;
+      font-family: 'Roboto', sans-serif;
       font-weight: 700;
       font-size: 2.5rem;
       color: $color-black;
     }
     &__role {
-      font-family: 'Noto Sans CJK JP', sans-serif;
+      font-family: 'Roboto', sans-serif;
       font-weight: 700;
       font-size: 1.2rem;
       color: $color-gray;
       padding: 10px 0 0;
     }
     &__year {
-      font-family: 'Noto Sans CJK JP', sans-serif;
+      font-family: 'Roboto', sans-serif;
       font-weight: 700;
       font-size: 1.2rem;
       color: $color-gray;
     }
     &__desc {
-      font-family: 'Noto Sans CJK JP', sans-serif;
+      font-family: 'Roboto', sans-serif;
       font-weight: 500;
       font-size: 1.5rem;
       color: $color-black;
@@ -112,7 +113,7 @@
       }
     }
     &__desc {
-      font-family: 'Noto Sans CJK JP', sans-serif;
+      font-family: 'Roboto', sans-serif;
       font-weight: 500;
       font-size: 1.5rem;
       color: $color-black;
@@ -173,7 +174,7 @@
   }
 
   &__all {
-    font-family: 'Noto Sans CJK JP', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 1.2rem;
     color: $color-black;
@@ -184,7 +185,7 @@
     }
   }
   &__previous {
-    font-family: 'Noto Sans CJK JP', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 1.2rem;
     color: $color-black;
@@ -195,7 +196,7 @@
     }
   }
   &__next {
-    font-family: 'Noto Sans CJK JP', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 1.2rem;
     color: $color-black;

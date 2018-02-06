@@ -431,8 +431,10 @@ body {
     width: 100%;
   }
 }
+.intro__item {
+  margin: 0 auto;
+}
 .intro__main {
-  display: -ms-flex;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -458,7 +460,7 @@ body {
   }
 }
 .intro__main a {
-  font-family: 'Noto Sans CJK JP', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 1.5rem;
   color: #4A4A4A;
@@ -470,26 +472,26 @@ body {
   }
 }
 .intro__main__title {
-  font-family: 'Noto Sans CJK JP', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 2.5rem;
   color: #4A4A4A;
 }
 .intro__main__role {
-  font-family: 'Noto Sans CJK JP', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 1.2rem;
   color: #8C8C8C;
   padding: 10px 0 0;
 }
 .intro__main__year {
-  font-family: 'Noto Sans CJK JP', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 1.2rem;
   color: #8C8C8C;
 }
 .intro__main__desc {
-  font-family: 'Noto Sans CJK JP', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 1.5rem;
   color: #4A4A4A;
@@ -521,7 +523,7 @@ body {
   }
 }
 .intro__detail__desc {
-  font-family: 'Noto Sans CJK JP', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 1.5rem;
   color: #4A4A4A;
@@ -594,7 +596,7 @@ body {
   }
 }
 .transition__all {
-  font-family: 'Noto Sans CJK JP', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 1.2rem;
   color: #4A4A4A;
@@ -606,7 +608,7 @@ body {
   }
 }
 .transition__previous {
-  font-family: 'Noto Sans CJK JP', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 1.2rem;
   color: #4A4A4A;
@@ -618,7 +620,7 @@ body {
   }
 }
 .transition__next {
-  font-family: 'Noto Sans CJK JP', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 1.2rem;
   color: #4A4A4A;
@@ -637,12 +639,13 @@ section {
 .keyvisual {
   width: 100%;
   height: 600px;
-  background-color: #7DC3E6;
+  background-image: url(/assets/img/keyvisual.png);
+  background-size: cover;
 }
 .keyvisual__main {
   font-size: 3.5rem;
-  font-family: 'Noto Sans CJK JP', sans-serif;
-  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
   padding-top: 200px;
   text-align: center;
 }
@@ -659,7 +662,7 @@ section {
 .keyvisual__sub {
   font-size: 2rem;
   text-align: center;
-  font-family: 'Noto Sans CJK JP', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
 }
 @media only screen and (max-width: 599px) {
@@ -719,7 +722,7 @@ section {
   }
 }
 .works__main__title {
-  font-family: 'Noto Sans CJK JP', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 2rem;
   color: #4A4A4A;
@@ -731,7 +734,7 @@ section {
   }
 }
 .works__main__desc {
-  font-family: 'Noto Sans CJK JP', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 1.5rem;
   color: #4A4A4A;
@@ -783,7 +786,7 @@ section {
 }
 .about__main__head {
   font-size: 2.0rem;
-  font-family: 'Noto Sans CJK JP', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 700;
   color: #4A4A4A;
   margin-bottom: 20px;
@@ -804,7 +807,7 @@ section {
 }
 .about__main__desc {
   font-size: 1.5rem;
-  font-family: 'Noto Sans CJK JP', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   color: #4A4A4A;
   line-height: 1.5;
@@ -824,7 +827,7 @@ section {
 }
 .about__main__career {
   font-size: 1.5rem;
-  font-family: 'Noto Sans CJK JP', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 700;
   color: #4A4A4A;
 }
@@ -844,7 +847,7 @@ section {
 
 .contact__sub {
   font-size: 1.5rem;
-  font-family: 'Noto Sans CJK JP', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   color: #4A4A4A;
   text-align: center;
@@ -875,12 +878,12 @@ section {
 }
 
 ::-moz-selection {
-  background-color: #7DC3E6;
+  background-color: #59b9c6;
   color: #FFFFFF;
 }
 
 ::selection {
-  background-color: #7DC3E6;
+  background-color: #59b9c6;
   color: #FFFFFF;
 }
 
@@ -961,17 +964,19 @@ section {
 }
 
 .title {
+  display: table;
   font-size: 3rem;
-  font-family: 'Noto Sans CJK JP', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 700;
   color: #4A4A4A;
   text-align: center;
-  margin: 120px 0 80px 0;
+  margin: 120px auto 80px;
+  border-bottom: 6px solid #FF2851;
 }
 @media only screen and (max-width: 599px) {
   .title {
     font-size: 2.4rem;
-    margin: 80px 0 40px 0;
+    margin: 80px auto 40px;
   }
 }
 
@@ -998,10 +1003,44 @@ strong {
   color: #000000;
 }
 
-#home {
-  position: absolute;
-  top: 23px;
-  left: 30px;
+.pagetop {
+  position: fixed;
+  bottom: 40px;
+  right: 35px;
+}
+@media only screen and (max-width: 599px) {
+  .pagetop {
+    bottom: 20px;
+    right: 35px;
+  }
+}
+.pagetop img {
+  width: 90px;
+}
+@media only screen and (max-width: 599px) {
+  .pagetop img {
+    width: 70px;
+  }
+}
+.pagetop a {
+  display: block;
+  text-decoration: none;
+}
+.pagetop:hover {
+  opacity: 0.85;
+}
+
+.copywrite {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #4A4A4A;
+  margin: 20px 0 20px 35px;
+}
+@media only screen and (max-width: 599px) {
+  .copywrite {
+    font-size: 1rem;
+  }
 }
 
 .button::before,
@@ -1026,7 +1065,7 @@ strong {
 .header__nav {
   width: 100%;
   height: 90px;
-  background-color: #7DC3E6;
+  background-color: #59b9c6;
 }
 @media only screen and (max-width: 599px) {
   .header__nav {
@@ -1051,7 +1090,7 @@ strong {
   margin: 20px 20px 0;
 }
 .header__nav__menu li a {
-  font-family: 'Noto Sans CJK JP', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 1.2rem;
   text-decoration: none;
@@ -1107,7 +1146,7 @@ strong {
   }
 }
 .footer__nav__menu li a {
-  font-family: 'Noto Sans CJK JP', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 1.2rem;
   text-decoration: none;
@@ -1142,7 +1181,7 @@ strong {
 .single__header__nav {
   width: 100%;
   height: 90px;
-  background-color: #D2DAE2;
+  background-color: #C5E1E4;
   margin-right: 10px;
 }
 @media only screen and (max-width: 599px) {
@@ -1166,7 +1205,7 @@ strong {
   margin: 20px 20px 0;
 }
 .single__header__nav ul li a {
-  font-family: 'Noto Sans CJK JP', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 1.2rem;
   text-decoration: none;
@@ -1229,19 +1268,19 @@ strong {
   font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
-  src: local("Noto Sans CJK JP"), url(fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-Regular.woff2) format("woff2"), url(fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-Regular.woff) format("woff"), url(fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-Regular.otf) format("opentype");
+  src: local("Roboto"), url(fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-Regular.woff2) format("woff2"), url(fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-Regular.woff) format("woff"), url(fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-Regular.otf) format("opentype");
 }
 @font-face {
   font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 500;
-  src: local("Noto Sans CJK JP"), url(fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-Regular.woff2) format("woff2"), url(fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-Regular.woff) format("woff"), url(fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-Regular.otf) format("opentype");
+  src: local("Roboto"), url(fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-Regular.woff2) format("woff2"), url(fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-Regular.woff) format("woff"), url(fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-Regular.otf) format("opentype");
 }
 @font-face {
   font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 700;
-  src: local("Noto Sans CJK JP"), url(fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-Regular.woff2) format("woff2"), url(fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-Regular.woff) format("woff"), url(fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-Regular.otf) format("opentype");
+  src: local("Roboto"), url(fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-Regular.woff2) format("woff2"), url(fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-Regular.woff) format("woff"), url(fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-Regular.otf) format("opentype");
 }
 @font-face {
   font-family: 'Hirago';

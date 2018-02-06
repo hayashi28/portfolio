@@ -16,7 +16,7 @@
     li {
       margin: 20px 20px 0;
       a {
-        font-family: 'Noto Sans CJK JP', sans-serif;
+        font-family: 'Roboto', sans-serif;
         font-weight: 700;
         font-size: 1.2rem;
         text-decoration: none;
@@ -68,7 +68,7 @@
       }
 
       a {
-        font-family: 'Noto Sans CJK JP', sans-serif;
+        font-family: 'Roboto', sans-serif;
         font-weight: 700;
         font-size: 1.2rem;
         text-decoration: none;
@@ -107,7 +107,7 @@
   &__nav {
     width: 100%;
     height: 90px;
-    background-color: #D2DAE2;
+    background-color: #C5E1E4;
     margin-right: 10px;
 
     @include sp_style {
@@ -120,7 +120,7 @@
       li {
         margin: 20px 20px 0;
         a {
-          font-family: 'Noto Sans CJK JP', sans-serif;
+          font-family: 'Roboto', sans-serif;
           font-weight: 700;
           font-size: 1.2rem;
           text-decoration: none;

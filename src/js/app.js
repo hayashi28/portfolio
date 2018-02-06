@@ -40,12 +40,28 @@ jQuery(document).ready(function($){
 
 });
 
-(function($) {
-    $(function() {
-        var $header = $('#top-head');
-        // Nav Toggle Button
-        $('#nav-toggle').click(function(){
-            $header.toggleClass('open');
-        });
+$(document).ready(function(){
+    $('#pagetop').click(function () { // .pagetopをクリックすると
+        $('body,html').animate({ // いちばん上にanimateする
+        scrollTop: 0 // 戻る位置
+        }, 400); // 戻るスピード
+        return false;
     });
-})(jQuery);
+});
+
+$(document).ready(function(){
+    $("#topBtn").hide(); //とりあえず隠す
+    $(window).on("scroll", function() {
+        if ($(this).scrollTop() > 100) { //100以上にスクロールされた／されている時は
+            $("#topBtn").fadeIn("fast"); //ふわっと表示
+        } else { //それ意外は
+            $("#topBtn").fadeOut("fast"); //ふわっと非表示
+        }
+    });
+    $('#topBtn').click(function () {
+        $('body,html').animate({
+        scrollTop: 0
+        }, 400);
+        return false;
+    });
+});
