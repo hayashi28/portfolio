@@ -1,0 +1,23 @@
+.detailImg {
+  margin: 0 0 40px;
+  img {
+    width: 100%;
+    object-fit: contain;
+
+    @include pc_style {
+      img {
+        display: none;
+      }
+    }
+    @include tb_style {
+      img {
+        display: none;
+      }
+    }
+    @include sp_style {
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
