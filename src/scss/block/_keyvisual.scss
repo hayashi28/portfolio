@@ -1,0 +1,36 @@
+section {
+  margin-bottom: 80px;
+}
+
+.keyvisual {
+  width: 100%;
+  height: 600px;
+  background-size: cover;
+  background-color: #59B9C6;
+  &__name {
+    font-size: 3.5rem;
+    font-family: 'YuGothic', sans-serif;
+    font-weight: bold;
+    padding-top: 200px;
+    text-align: center;
+
+    @include sp_style {
+      padding-top: 250px;
+      font-size: 3rem;
+    }
+    p {
+      color: $color-white;
+      z-index: 2;
+    }
+  }
+  &__role {
+    font-size: 2rem;
+    text-align: center;
+    font-family: 'YuGothic', sans-serif;
+    font-weight: 500;
+
+    @include sp_style {
+      font-size: 1.8rem;
+    }
+  }
+}

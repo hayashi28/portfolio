@@ -1,0 +1,20 @@
+.otherWorks {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 20vw;
+
+  @include tb_style {
+    flex-direction: column;
+  }
+  @include sp_style {
+    flex-direction: column;
+  }
+  &__heading {
+    margin-top: 80px;
+    color: $color-black;
+    font-family: 'YuGothic', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+  }
+}

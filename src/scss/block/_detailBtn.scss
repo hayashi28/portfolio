@@ -1,0 +1,28 @@
+.detailBtn {
+  display: block;
+  margin-top: 80px;
+  &:hover {
+    -webkit-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+  &__wrapper {
+    text-align: center;
+  }
+  a {
+    padding: 20px 40px;
+    text-align: center;
+    text-decoration: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    background-color: $color-key;
+    border-radius: 40px;
+    color: $color-white;
+    font-family: 'YuGothic', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+}

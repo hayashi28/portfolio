@@ -2,12 +2,21 @@
 @import "mixin/mixin";
 @import "base/normalize";
 @import "base/base";
-@import "base/single";
 
-@import "block/header";
-@import "block/global";
+@import "block/about";
 @import "block/btn";
+@import "block/contact";
+@import "block/detailBlock";
+@import "block/detailBtn";
+@import "block/detailImg";
+@import "block/detailItem";
+@import "block/detailOverview";
+@import "block/global";
+@import "block/keyvisual";
 @import "block/nav";
+@import "block/otherWorks";
+@import "block/otherWorksItem";
+@import "block/works";
 
 @import "utility/utility";
 @import "utility/iconfont";

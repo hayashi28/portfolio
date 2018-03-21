@@ -1,0 +1,33 @@
+.detailOverview {
+  &__heading {
+    color: $color-black;
+    font-family: 'YuGothic', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+  &__role {
+    padding: 10px 0 0;
+    color: $color-gray;
+    font-family: 'YuGothic', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+  }
+  &__term {
+    color: $color-gray;
+    font-family: 'YuGothic', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  &__desc {
+    padding: 20px 0 0;
+    color: $color-black;
+    font-family: 'YuGothic', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+
+    @include sp_style {
+      font-size: 1.2rem;
+      margin: 0 auto;
+    }
+  }
+}

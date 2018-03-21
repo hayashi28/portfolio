@@ -6,9 +6,10 @@
   @include sp_style {
     display: none;
   }
+  &__home {
+    padding-left: 20px;
+  }
   &__menu {
-    display: -webkit-flex;
-    display: -ms-flex;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -16,13 +17,13 @@
     li {
       margin: 20px 20px 0;
       a {
-        font-family: 'Roboto', sans-serif;
+        display: inline-block;
+        position: relative;
+        color: $color-white;
+        font-family: 'YuGothic', sans-serif;
         font-weight: 700;
         font-size: 1.2rem;
         text-decoration: none;
-        color: $color-white;
-        position: relative;
-        display: inline-block;
         &:after {
           position: absolute;
           top: 20px;
@@ -68,7 +69,7 @@
       }
 
       a {
-        font-family: 'Roboto', sans-serif;
+        font-family: 'YuGothic', sans-serif;
         font-weight: 700;
         font-size: 1.2rem;
         text-decoration: none;
@@ -103,48 +104,50 @@
   }
 }
 
-.single__header {
-  &__nav {
+.singleHeader {
+  display: flex;
+  align-items: center;
+  &__home {
+    margin-left: 40px;
+  }
+  &__list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     width: 100%;
     height: 90px;
-    background-color: #C5E1E4;
-    margin-right: 10px;
+    margin-right: 20px;
 
     @include sp_style {
       display: none;
     }
-    ul {
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-end;
-      li {
-        margin: 20px 20px 0;
-        a {
-          font-family: 'Roboto', sans-serif;
-          font-weight: 700;
-          font-size: 1.2rem;
-          text-decoration: none;
-          color: $color-white;
-          position: relative;
-          display: inline-block;
-          &:after {
-            position: absolute;
-            top: 20px;
-            bottom: 2px;
-            left: 0;
-            content: '';
-            width: 100%;
-            height: 1px;
-            background: $color-white;
-            opacity: 0;
-            visibility: hidden;
-            transition: .3s;
-          }
-          &:hover::after {
-            bottom: -4px;
-            opacity: 1;
-            visibility: visible;
-          }
+    li {
+      padding: 0 20px 0;
+      a {
+        display: inline-block;
+        position: relative;
+        font-family: 'YuGothic', sans-serif;
+        font-size: 1.2rem;
+        font-weight: 700;
+        text-decoration: none;
+        color: $color-black;
+        &:after {
+          position: absolute;
+          top: 20px;
+          bottom: 2px;
+          left: 0;
+          content: '';
+          width: 100%;
+          height: 3px;
+          background: $color-key;
+          opacity: 0;
+          visibility: hidden;
+          transition: .3s;
+        }
+        &:hover::after {
+          bottom: -4px;
+          opacity: 1;
+          visibility: visible;
         }
       }
     }

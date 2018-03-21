@@ -29,44 +29,61 @@
 </head>
 <body>
 
-<header class="single__header">
-  <nav class="single__header__nav">
-    <ul>
-      <li><a href="/index.html#works">WORKS</a></li>
-      <li><a href="/index.html#about">ABOUT</a></li>
-      <li><a href="/index.html#contact">CONTACT</a></li>
-    </ul>
-  </nav>
-</header>
+<nav class="singleHeader">
+  <div class="singleHeader__home">
+    <a href="/index.html"><img src="assets/img/icon_soda2.svg" alt=""></a>
+  </div>
+  <ul class="singleHeader__list">
+    <li><a href="/index.html#works">WORKS</a></li>
+    <li><a href="/index.html#about">ABOUT</a></li>
+    <li><a href="/index.html#contact">CONTACT</a></li>
+  </ul>
+</nav>
 
 <section>
-  <div class="intro">
-    <div class="intro__sub">
-      <img src="assets/img/single3_thumb.png" alt="" class="invisible_sp">
-      <img src="assets/img/ws_3.png" alt="" class="invisible_pc">
-    </div>
-    <div class="intro__main">
-      <p class="intro__main__title">Lispo</p>
-      <p class="intro__main__role">Art Direction/Design</p>
-      <p class="intro__main__year">2017.08</p>
-      <p class="intro__main__desc">Goodpatchのサマーインターンで作成したアプリ「Lispo」です。
-        3人1組のチームでコンセプト設計から担当し、「音楽xIT」というテーマを元に1週間でモックアップデザインを完成させました。
-        <br>特に注意したのは、大学生が日常的に使ってくれる<strong>シンプルでやる気がでるUI</strong>にするという点です。<br>
-        そのため、使っていることが周りから見て恥ずかしくないこと、勉強のやる気を少しでも後押しできること、直感的で操作に迷いが生じないことを意識して作っています。
+  <div class="detailImg">
+    <img src="assets/img/single3_thumb.png" alt="" class="invisible_sp">
+    <img src="assets/img/ws_3.png" alt="" class="invisible_pc">
+  </div>
+  <div class="detailBlock">
+    <div class="detailOverview">
+      <p class="detailOverview__heading">Lispo</p>
+      <p class="detailOverview__role">Art Direction/Design</p>
+      <p class="detailOverview__term">2017.08</p>
+      <p class="detailOverview__desc">
+        Goodpatchのサマーインターンで作成したアプリ「Lispo」です。
+        3人1組のチームでコンセプト設計から担当し、「音楽xIT」というテーマを元に1週間でモックアップデザインを完成させました。<br>
+        特に注意したのは、大学生が日常的に使ってくれるシンプルでやる気がでるUIにするという点です。<br>
+        そのため、使っていることが周りから見て恥ずかしくないこと、勉強のやる気を少しでも後押しできること、
+        直感的で操作に迷いが生じないことを意識して作っています。
       </p>
-      <a href="https://speakerdeck.com/hayashi28/kuro" target="_blank">https://speakerdeck.com/hayashi28/kuro</a>
     </div>
-    <div class="intro__detail">
-      <div class="intro__detail__thumb">
-        <img src="assets/img/works3_thumb_sample1.png" alt="">
+    <div class="detailItem">
+      <img src="assets/img/works3_thumb_sample1.png" alt="" class="detailItem__thumb">
+      <p class="detailItem__desc">
+        講義を録音する画面と曲を出力する画面です。<br>
+        赤を基調として、やる気を高められるような配色にしています。
+      </p>
+    </div>
+    <div class="detailBtn">
+      <div class="detailBtn__wrapper">
+        <a href="https://speakerdeck.com/hayashi28/kuro">speakerdeck.com</a>
       </div>
-      <p class="intro__detail__desc">講義を録音する画面と曲を出力する画面です。<br>赤を基調として、<strong>やる気を高められるような配色</strong>にしています。</p>
     </div>
-    <hr>
-    <div class="transition">
-      <a href="/single2.html" class="transition__previous">< PREVIOUS</a>
-      <a href="/index.html#works" class="transition__all">VIEW ALL</a>
-      <a href="/single.html" class="transition__next">NEXT ></a>
+  </div>
+  <p class="otherWorks__heading">WORKS</p>
+  <div class="otherWorks">
+    <div class="otherWorksItem">
+      <a href="/single.html" class="otherWorksItem__thumb"><img src="assets/img/ws_1.png" alt=""></a>
+      <p class="otherWorksItem__heading">VR/ARrangement</p>
+    </div>
+    <div class="otherWorksItem">
+      <a href="/single2.html" class="otherWorksItem__thumb"><img src="assets/img/ws_2.png" alt=""></a>
+      <p class="otherWorksItem__heading">AI_STANDARD</p>
+    </div>
+    <div class="otherWorksItem">
+      <a href="/single3.html" class="otherWorksItem__thumb"><img src="assets/img/ws_3.png" alt=""></a>
+      <p class="otherWorksItem__heading">Lispo</p>
     </div>
   </div>
 </section>
