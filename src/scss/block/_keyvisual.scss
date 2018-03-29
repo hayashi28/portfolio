@@ -1,26 +1,20 @@
-section {
-  margin-bottom: 80px;
-}
-
 .keyvisual {
   width: 100%;
   height: 600px;
-  background-size: cover;
   background-color: #59B9C6;
+
+  @include sp_style {
+    height: 500px;
+  }
   &__name {
-    font-size: 3.5rem;
-    font-family: 'YuGothic', sans-serif;
-    font-weight: bold;
     padding-top: 200px;
+    font-family: 'YuGothic', sans-serif;
+    font-size: 3.5rem;
+    font-weight: bold;
     text-align: center;
 
     @include sp_style {
-      padding-top: 250px;
-      font-size: 3rem;
-    }
-    p {
-      color: $color-white;
-      z-index: 2;
+      font-size: 2.5rem;
     }
   }
   &__role {

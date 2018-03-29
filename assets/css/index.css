@@ -413,43 +413,50 @@ body {
             flex-direction: column;
   }
 }
-.about__main {
+
+.aboutDesc {
   margin-left: 45px;
 }
+@media only screen and (max-width: 599px) {
+  .aboutDesc__avatar {
+    margin: 0 auto;
+  }
+}
+.aboutDesc__avatar img {
+  width: 180px;
+}
 @media only screen and (min-width: 600px) and (max-width: 960px) {
-  .about__main {
-    width: 80%;
+  .aboutDesc {
     margin: 0 auto;
   }
 }
 @media only screen and (max-width: 599px) {
-  .about__main {
-    width: 80%;
+  .aboutDesc {
     margin: 0 auto;
   }
 }
-.about__main__head {
-  font-size: 2.0rem;
+.aboutDesc__heading {
+  font-size: 2rem;
   font-family: 'YuGothic', sans-serif;
   font-weight: 700;
   color: #4A4A4A;
   margin-bottom: 20px;
 }
 @media only screen and (min-width: 600px) and (max-width: 960px) {
-  .about__main__head {
+  .aboutDesc__heading {
     font-size: 2rem;
     text-align: center;
     margin: 20px 0;
   }
 }
 @media only screen and (max-width: 599px) {
-  .about__main__head {
+  .aboutDesc__heading {
     font-size: 1.8rem;
     text-align: center;
     margin: 20px 0;
   }
 }
-.about__main__desc {
+.aboutDesc__desc {
   font-size: 1.5rem;
   font-family: 'YuGothic', sans-serif;
   font-weight: 400;
@@ -458,35 +465,27 @@ body {
   margin-bottom: 30px;
 }
 @media only screen and (min-width: 600px) and (max-width: 960px) {
-  .about__main__desc {
+  .aboutDesc__desc {
     font-size: 1.5rem;
     margin-bottom: 30px;
   }
 }
 @media only screen and (max-width: 599px) {
-  .about__main__desc {
+  .aboutDesc__desc {
     font-size: 1.2rem;
     margin-bottom: 20px;
   }
 }
-.about__main__career {
+.aboutDesc__career {
   font-size: 1.5rem;
   font-family: 'YuGothic', sans-serif;
   font-weight: 700;
   color: #4A4A4A;
 }
 @media only screen and (max-width: 599px) {
-  .about__main__career {
+  .aboutDesc__career {
     font-size: 1.2rem;
   }
-}
-@media only screen and (max-width: 599px) {
-  .about__sub {
-    margin: 0 auto;
-  }
-}
-.about__sub img {
-  width: 180px;
 }
 
 .button::before,
@@ -508,7 +507,7 @@ body {
   background-color: #FF9F17;
 }
 
-.contact__sub {
+.contact__heading {
   color: #4A4A4A;
   text-align: center;
   font-size: 1.5rem;
@@ -516,11 +515,11 @@ body {
   font-weight: 500;
 }
 @media only screen and (max-width: 599px) {
-  .contact__sub {
+  .contact__heading {
     font-size: 1.2rem;
   }
 }
-.contact__main__list {
+.contact__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -532,17 +531,26 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.contact__main li {
+.contact li {
   margin: 30px 20px 0;
 }
-.contact__main li img {
+.contact li img {
   width: 48px;
+}
+@media only screen and (max-width: 599px) {
+  .contact li img {
+    width: 36px;
+  }
 }
 
 .detailBlock {
-  margin: 0 20vw;
-  padding-bottom: 80px;
+  padding: 0 20vw 80px;
   border-bottom: 1px solid #B4C5C7;
+}
+@media only screen and (max-width: 599px) {
+  .detailBlock {
+    padding: 0 20px 80px;
+  }
 }
 
 .detailBtn {
@@ -572,6 +580,11 @@ body {
 
 .detailImg {
   margin: 0 0 40px;
+}
+@media only screen and (max-width: 599px) {
+  .detailImg {
+    margin: 0 0 20px;
+  }
 }
 .detailImg img {
   width: 100%;
@@ -613,14 +626,8 @@ body {
   font-weight: 500;
   text-align: left;
 }
-@media only screen and (min-width: 600px) and (max-width: 960px) {
-  .detailItem__desc {
-    margin: 0 10% 0;
-  }
-}
 @media only screen and (max-width: 599px) {
   .detailItem__desc {
-    margin: 0 10% 0;
     font-size: 1.2rem;
   }
 }
@@ -630,6 +637,11 @@ body {
   font-family: 'YuGothic', sans-serif;
   font-size: 2.5rem;
   font-weight: 700;
+}
+@media only screen and (max-width: 599px) {
+  .detailOverview__heading {
+    font-size: 2rem;
+  }
 }
 .detailOverview__role {
   padding: 10px 0 0;
@@ -666,6 +678,10 @@ body {
 ::selection {
   background-color: #59b9c6;
   color: #FFFFFF;
+}
+
+section {
+  margin-bottom: 80px;
 }
 
 .wrapper {
@@ -762,12 +778,17 @@ body {
 }
 @media only screen and (max-width: 599px) {
   .titleBlock {
-    font-size: 2.4rem;
+    font-size: 2rem;
     margin: 80px auto 40px;
   }
 }
-.titleBlock__text {
+.titleBlock__heading {
   padding-left: 10px;
+}
+@media only screen and (max-width: 599px) {
+  .titleBlock__thumb {
+    width: 36px;
+  }
 }
 
 .works__main__thumb img:hover {
@@ -800,12 +821,11 @@ strong {
 .pagetop {
   position: fixed;
   bottom: 40px;
-  right: 35px;
+  right: 40px;
 }
 @media only screen and (max-width: 599px) {
   .pagetop {
-    bottom: 20px;
-    right: 35px;
+    display: none;
   }
 }
 .pagetop img {
@@ -829,7 +849,7 @@ strong {
   font-weight: 700;
   font-size: 1.2rem;
   color: #4A4A4A;
-  margin: 20px 0 20px 35px;
+  margin: 20px 0 20px 20px;
 }
 @media only screen and (max-width: 599px) {
   .copywrite {
@@ -837,32 +857,189 @@ strong {
   }
 }
 
-section {
-  margin-bottom: 80px;
+/* ▽▽ハンバーガーメニュー▽▽
+------------------------------------------------------- */
+.hm_menu_check {
+  /* チェックボックスを隠す */
+  display: none;
+}
+
+.hm_wrap {
+  display: inline-block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 20px;
+}
+@media only screen and (min-width: 961px) {
+  .hm_wrap {
+    display: none;
+  }
+}
+
+.hm_title {
+  /* ハンバーガーメニューオープン時の見出し */
+  position: relative;
+  color: #999;
+  display: inline-block;
+  float: right;
+  font-weight: 100;
+  line-height: 30px;
+  margin: 0 0 0 15px;
+  opacity: 0;
+  -webkit-transform: translate3d(0, -15px, 0);
+  transform: translate3d(0, -15px, 0);
+  transition: opacity 0.5s, -webkit-transform 0.6s;
+  transition: transform 0.6s, opacity 0.5s;
+  transition: transform 0.6s, opacity 0.5s, -webkit-transform 0.6s;
+  z-index: 2;
+}
+
+/* ▽▽メニューボタン▽▽ */
+.hm_btn {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  display: block;
+  float: right;
+  z-index: 2;
+  display: block;
+  position: relative;
+  width: 25px;
+  /*長さ*/
+  border-radius: 3px;
+  content: '';
+  cursor: pointer;
+}
+
+.hm_btn::before {
+  box-shadow: #FFFFFF 0 12px 0;
+}
+
+.hm_btn::after {
+  bottom: 0;
+}
+
+.hm_btn::before,
+.hm_btn::after {
+  width: 30px;
+  height: 6px;
+  background: #FFFFFF;
+  display: block;
+  content: '';
+  position: absolute;
+  transition: box-shadow 0.2s linear, -webkit-transform 0.2s 0.2s;
+  transition: box-shadow 0.2s linear, transform 0.2s 0.2s;
+  transition: box-shadow 0.2s linear, transform 0.2s 0.2s, -webkit-transform 0.2s 0.2s;
+}
+
+/* △△メニューボタン△△ */
+.hm_menu_wrap {
+  width: 100%;
+  height: 10000px;
+  background: #fff;
+  position: absolute;
+  left: -100%;
+  top: 0;
+  transition: left 0.4s;
+}
+
+/* ▽▽開閉時のアニメーション▽▽ */
+.hm_menu_check:checked ~ .hm_title {
+  opacity: 1;
+  -webkit-transform: none;
+  transform: none;
+}
+
+.hm_menu_check:checked ~ .hm_btn::before {
+  box-shadow: transparent 0 0 0;
+  -webkit-transform: rotate(45deg) translate3d(6px, 11px, 0);
+  transform: rotate(45deg) translate3d(6px, 11px, 0);
+}
+
+.hm_menu_check:checked ~ .hm_btn::after {
+  -webkit-transform: rotate(-45deg) translate3d(6px, -11px, 0);
+  transform: rotate(-45deg) translate3d(6px, -11px, 0);
+}
+
+.hm_menu_check:checked ~ .hm_menu_wrap {
+  left: 0;
+}
+
+/* △△開閉時のアニメーション△△ */
+/* ▽▽メニュー内のリストスタイル▽▽ */
+.hm_list {
+  list-style-type: none;
+  margin: 50px 0 0;
+  padding: 0;
+}
+
+.hm_list li a {
+  color: #777;
+  display: block;
+  overflow: hidden;
+  padding: 8px 22px;
+  position: relative;
+  text-decoration: none;
+  z-index: 1;
+}
+
+.hm_list li a::before {
+  /* aタグマウスオーバー時の背景 */
+  background: #eee;
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 100%;
+  left: 0;
+  transition: bottom 0.4s;
+  z-index: -1;
+}
+
+.hm_list li a:hover::before {
+  bottom: 0;
+}
+
+.hm_list li a:hover::after {
+  opacity: 0.5;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+/* メニュー内のリストスタイル△△ */
+.indexWrapper {
+  padding: 0 10vw;
+}
+@media only screen and (max-width: 599px) {
+  .indexWrapper {
+    padding: 0 20px;
+  }
 }
 
 .keyvisual {
   width: 100%;
   height: 600px;
-  background-size: cover;
   background-color: #59B9C6;
 }
+@media only screen and (max-width: 599px) {
+  .keyvisual {
+    height: 500px;
+  }
+}
 .keyvisual__name {
-  font-size: 3.5rem;
-  font-family: 'YuGothic', sans-serif;
-  font-weight: bold;
   padding-top: 200px;
+  font-family: 'YuGothic', sans-serif;
+  font-size: 3.5rem;
+  font-weight: bold;
   text-align: center;
 }
 @media only screen and (max-width: 599px) {
   .keyvisual__name {
-    padding-top: 250px;
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
-}
-.keyvisual__name p {
-  color: #FFFFFF;
-  z-index: 2;
 }
 .keyvisual__role {
   font-size: 2rem;
@@ -900,7 +1077,7 @@ section {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  margin-right: 10px;
+  margin-right: 20px;
 }
 .header__nav__menu li {
   margin: 20px 20px 0;
@@ -921,7 +1098,7 @@ section {
   left: 0;
   content: '';
   width: 100%;
-  height: 1px;
+  height: 3px;
   background: #FFFFFF;
   opacity: 0;
   visibility: hidden;
@@ -1002,6 +1179,11 @@ section {
       -ms-flex-align: center;
           align-items: center;
 }
+@media only screen and (max-width: 599px) {
+  .singleHeader {
+    display: none;
+  }
+}
 .singleHeader__home {
   margin-left: 40px;
 }
@@ -1018,11 +1200,6 @@ section {
   width: 100%;
   height: 90px;
   margin-right: 20px;
-}
-@media only screen and (max-width: 599px) {
-  .singleHeader__list {
-    display: none;
-  }
 }
 .singleHeader__list li {
   padding: 0 20px 0;
@@ -1061,7 +1238,7 @@ section {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  margin: 0 20vw;
+  padding: 0 20vw;
 }
 @media only screen and (min-width: 600px) and (max-width: 960px) {
   .otherWorks {
@@ -1077,6 +1254,7 @@ section {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    padding: 0 20px;
   }
 }
 .otherWorks__heading {
@@ -1086,6 +1264,11 @@ section {
   font-size: 2rem;
   font-weight: 700;
   text-align: center;
+}
+@media only screen and (max-width: 599px) {
+  .otherWorks__heading {
+    margin-top: 40px;
+  }
 }
 
 .otherWorksItem {
@@ -1105,7 +1288,7 @@ section {
 }
 @media only screen and (max-width: 599px) {
   .otherWorksItem__thumb img {
-    width: 320px;
+    width: 100%;
   }
 }
 .otherWorksItem__heading {
@@ -1114,19 +1297,13 @@ section {
   font-size: 1.5rem;
   font-weight: 700;
 }
-@media only screen and (max-width: 599px) {
-  .otherWorksItem__heading {
-    font-size: 1.8rem;
-  }
-}
 
 .works {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 @media only screen and (min-width: 600px) and (max-width: 960px) {
   .works {
@@ -1144,31 +1321,28 @@ section {
             flex-direction: column;
   }
 }
-.works__main {
-  margin: 0 20px;
+
+.worksItem {
+  margin: 20px 0;
 }
-@media only screen and (min-width: 600px) and (max-width: 960px) {
-  .works__main__thumb {
-    margin: 20px auto;
-  }
-}
-@media only screen and (max-width: 599px) {
-  .works__main__thumb {
-    margin: 20px auto;
-  }
-}
-.works__main__thumb img {
+.worksItem__thumb img {
   width: 360px;
   border-radius: 2px;
   opacity: 1;
   transition: .3s ease-in-out;
 }
-@media only screen and (max-width: 599px) {
-  .works__main__thumb img {
-    width: 320px;
+@media only screen and (min-width: 600px) and (max-width: 960px) {
+  .worksItem__thumb img {
+    width: 360px;
+    margin: 20px auto 0;
   }
 }
-.works__main__title {
+@media only screen and (max-width: 599px) {
+  .worksItem__thumb img {
+    width: 100%;
+  }
+}
+.worksItem__heading {
   margin-top: 10px;
   color: #4A4A4A;
   font-family: 'YuGothic', sans-serif;
@@ -1176,11 +1350,11 @@ section {
   font-weight: 700;
 }
 @media only screen and (max-width: 599px) {
-  .works__main__title {
+  .worksItem__heading {
     font-size: 1.8rem;
   }
 }
-.works__main__desc {
+.worksItem__desc {
   margin-top: 5px;
   color: #4A4A4A;
   font-family: 'YuGothic', sans-serif;
@@ -1189,7 +1363,7 @@ section {
   line-height: 1.5;
 }
 @media only screen and (max-width: 599px) {
-  .works__main__desc {
+  .worksItem__desc {
     font-size: 1.2rem;
   }
 }
@@ -1324,13 +1498,3 @@ section {
   font-family: 'AppleSystem';
   src: local("-apple-system"), local("BlinkMacSystemFont");
 }
-/*
-Theme Name: テーマの名前
-Description: テーマの説明
-Theme URI:
-Author:
-Author URI:
-Version: 1.0.0
-License:
-License URI:
-*/
