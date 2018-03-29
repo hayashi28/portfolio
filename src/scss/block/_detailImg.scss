@@ -1,5 +1,9 @@
 .detailImg {
   margin: 0 0 40px;
+
+  @include sp_style {
+    margin: 0 0 20px;
+  }
   img {
     width: 100%;
     object-fit: contain;

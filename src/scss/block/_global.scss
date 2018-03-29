@@ -5,6 +5,10 @@
 
 body {}
 
+section {
+  margin-bottom: 80px;
+}
+
 .wrapper {
   //基本的に優先デバイスの記述を先に書く
   //優先でないデバイスはsp_style tb_style pc_style などで上書き記述
@@ -95,11 +99,16 @@ body {}
   font-weight: 700;
 
   @include sp_style {
-    font-size: 2.4rem;
+    font-size: 2rem;
     margin: 80px auto 40px;
   }
-  &__text {
+  &__heading {
     padding-left: 10px;
+  }
+  &__thumb {
+    @include sp_style {
+      width: 36px;
+    }
   }
 }
 
@@ -137,11 +146,10 @@ strong {
 .pagetop {
   position: fixed;
   bottom: 40px;
-  right: 35px;
+  right: 40px;
 
   @include sp_style {
-    bottom: 20px;
-    right: 35px;
+    display: none;
   }
 
   img {
@@ -165,7 +173,7 @@ strong {
   font-weight: 700;
   font-size: 1.2rem;
   color: $color-black;
-  margin: 20px 0 20px 35px;
+  margin: 20px 0 20px 20px;
 
   @include sp_style {
     font-size: 1rem;

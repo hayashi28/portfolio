@@ -24,7 +24,7 @@
     <link rel="apple-touch-icon" href="app-icon.png">
     <link rel="stylesheet" media="all" href="assets/css/index.css">
     <link rel="canonical" href="">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="assets/js/app.js"></script>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
@@ -40,6 +40,18 @@
   </nav>
 </header>
 
+<div class="hm_wrap">
+	<input id="hm_menu" type="checkbox" name="hm_menu" class="hm_menu_check"/>
+	<label for="hm_menu" class="hm_btn"></label>
+		<nav class="hm_menu_wrap">
+			<ul class="hm_list">
+				<li><a href="#works">WORKS</a></li>
+				<li><a href="#about">ABOUT</a></li>
+				<li><a href="#contact">CONTACT</a></li>
+			</ul>
+		</nav>
+</div>
+
 <section id="home">
   <div class="keyvisual">
     <p class="keyvisual__name">YUKI HAYASHI</p>
@@ -47,69 +59,71 @@
   </div>
 </section>
 
-<section id="works">
-  <div class="titleBlock">
-    <img src="assets/img/icon_soda.svg" alt="">
-    <p class="titleBlock__text">WORKS</p>
-  </div>
-  <div class="works">
-    <div class="works__main">
-      <a href="/single.html" class="works__main__thumb"><img src="assets/img/ws_1.png" alt=""></a>
-      <p class="works__main__title">VR/ARrangement</p>
-      <p class="works__main__desc">Art Direction/Design/Cording/2016</p>
+<div class="indexWrapper">
+  <section id="works">
+    <div class="titleBlock">
+      <img src="assets/img/icon_soda.svg" alt="" class="titleBlock__thumb">
+      <p class="titleBlock__heading">WORKS</p>
     </div>
-    <div class="works__main">
-      <a href="/single2.html" class="works__main__thumb"><img src="assets/img/ws_2.png" alt=""></a>
-      <p class="works__main__title">AI_STANDARD</p>
-      <p class="works__main__desc">Art Direction/Design/Cording/2017</p>
+    <div class="works">
+      <div class="worksItem">
+        <a href="/single.html" class="worksItem__thumb"><img src="assets/img/ws_1.png" alt=""></a>
+        <p class="worksItem__heading">VR/ARrangement</p>
+        <p class="worksItem__desc">Art Direction/Design/Cording/2016</p>
+      </div>
+      <div class="worksItem">
+        <a href="/single2.html" class="worksItem__thumb"><img src="assets/img/ws_2.png" alt=""></a>
+        <p class="worksItem__heading">AI_STANDARD</p>
+        <p class="worksItem__desc">Art Direction/Design/Cording/2017</p>
+      </div>
+      <div class="worksItem">
+        <a href="/single3.html" class="worksItem__thumb"><img src="assets/img/ws_3.png" alt=""></a>
+        <p class="worksItem__heading">Lispo</p>
+        <p class="worksItem__desc">Art Direction/Design/2017</p>
+      </div>
     </div>
-    <div class="works__main">
-      <a href="/single3.html" class="works__main__thumb"><img src="assets/img/ws_3.png" alt=""></a>
-      <p class="works__main__title">Lispo</p>
-      <p class="works__main__desc">Art Direction/Design/2017</p>
-    </div>
-  </div>
-</section>
+  </section>
 
-<section id="about">
-  <div class="titleBlock">
-    <img src="assets/img/icon_soda.svg" alt="">
-    <p class="titleBlock__text">ABOUT</p>
-  </div>
-  <div class="about">
-    <div class="about__sub">
-      <img src="assets/img/about_thumb.png" alt="">
+  <section id="about">
+    <div class="titleBlock">
+      <img src="assets/img/icon_soda.svg" alt="" class="titleBlock__thumb">
+      <p class="titleBlock__heading">ABOUT</p>
     </div>
-    <div class="about__main">
-      <p class="about__main__head">林 侑希</p>
-      <p class="about__main__desc">
-        1996年生まれ。愛媛県出身。<br>
-        初心者向けにプログラミングを教えるTECH::CAMPのメンターとして活動する。<br class="invisible_sp">
-        社内にいたデザイナーの仕事ぶりや制作物を見たことからデザインに興味を持ち、独学で勉強を開始。<br class="invisible_sp">
-        TECH::CAMPを運営するdivで経験を積んだ後、制作会社から事業会社まで様々な会社でインターン。<br class="invisible_sp">
-        メインはアプリのUIやWebサイトのデザインです。好きなものは柴犬とヨーロッパサッカーと漫画とカフェラテ。
-      </p>
-      <p class="about__main__career">2016.06 - 2017.12 div inc, Designer Parttime<br>2017.06 - 2017.12 DENDESIGN inc, Designer Parttime<br>2017.08 - Goodpatch inc, Designer Intern<br>2017.11 - PLAID inc, Designer Parttime<br>2018.01 - CROWDPORT inc, Designer Parttime</p>
+    <div class="about">
+      <div class="aboutDesc__avatar">
+        <img src="assets/img/about_thumb.png" alt="">
+      </div>
+      <div class="aboutDesc">
+        <p class="aboutDesc__heading">林 侑希</p>
+        <p class="aboutDesc__desc">
+          1996年生まれ。愛媛県出身。<br>
+          初心者向けにプログラミングを教えるTECH::CAMPのメンターとして活動する。<br class="invisible_sp">
+          社内にいたデザイナーの仕事ぶりや制作物を見たことからデザインに興味を持ち、独学で勉強を開始。<br class="invisible_sp">
+          TECH::CAMPを運営するdivで経験を積んだ後、制作会社から事業会社まで様々な会社でインターン。<br class="invisible_sp">
+          メインはアプリのUIやWebサイトのデザインです。好きなものは柴犬とヨーロッパサッカーと漫画とカフェラテ。
+        </p>
+        <p class="aboutDesc__career">2016.06 - 2017.12 div inc, Designer Parttime<br>2017.06 - 2017.12 DENDESIGN inc, Designer Parttime<br>2017.08 - Goodpatch inc, Designer Intern<br>2017.11 - PLAID inc, Designer Parttime<br>2018.01 - CROWDPORT inc, Designer Parttime</p>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="contact">
-  <div class="titleBlock">
-    <img src="assets/img/icon_soda.svg" alt="">
-    <p class="titleBlock__text">CONTACT</p>
-  </div>
-  <div class="contact">
-    <p class="contact__sub">お仕事のお話などお気軽にご相談ください。</p>
-    <div class="contact__main">
-      <ul class="contact__main__list">
-        <li><a href=""><img src="assets/img/fb_logo.svg" alt=""></a></li>
-        <li><a href="https://twitter.com/hayashiii1004" target="_blank"><img src="assets/img/twitter_logo.svg" alt=""></a></li>
-        <li><a href="mailto:y.hayashiii1004@gmail.com"><img src="assets/img/mail_logo.svg" alt=""></a></li>
-      </ul>
+  <section id="contact">
+    <div class="titleBlock">
+      <img src="assets/img/icon_soda.svg" alt="" class="titleBlock__thumb">
+      <p class="titleBlock__heading">CONTACT</p>
     </div>
-  </div>
-</section>
+    <div class="contact">
+      <p class="contact__heading">お仕事のお話などお気軽にご相談ください。</p>
+      <div class="contact__main">
+        <ul class="contact__list">
+          <li><a href=""><img src="assets/img/fb_logo.svg" alt=""></a></li>
+          <li><a href="https://twitter.com/hayashiii1004" target="_blank"><img src="assets/img/twitter_logo.svg" alt=""></a></li>
+          <li><a href="mailto:y.hayashiii1004@gmail.com"><img src="assets/img/mail_logo.svg" alt=""></a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</div>
 
 <p class="copywrite">© 2017 YUKIHAYASHI</p>
 

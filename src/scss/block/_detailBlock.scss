@@ -1,5 +1,8 @@
 .detailBlock {
-  margin: 0 20vw;
-  padding-bottom: 80px;
+  padding: 0 20vw 80px;
   border-bottom: 1px solid $border;
+
+  @include sp_style {
+    padding: 0 20px 80px;
+  }
 }

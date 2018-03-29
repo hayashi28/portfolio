@@ -25,7 +25,6 @@ jQuery(document).ready(function($){
         // Left value is set through getting a random value from bArray
         $('.bubbles').append('<div class="individual-bubble" style="center: ' + randomValue(bArray) + 'px; width: ' + size + 'px; height:' + size + 'px;"></div>');
 
-        // Animate each bubble to the top (bottom 100%) and reduce opacity as it moves
         // Callback function used to remove finsihed animations from the page
         $('.individual-bubble').animate({
             'bottom': '100%',

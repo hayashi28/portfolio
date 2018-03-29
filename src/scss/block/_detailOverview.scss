@@ -4,6 +4,10 @@
     font-family: 'YuGothic', sans-serif;
     font-size: 2.5rem;
     font-weight: 700;
+
+    @include sp_style {
+      font-size: 2rem;
+    }
   }
   &__role {
     padding: 10px 0 0;
