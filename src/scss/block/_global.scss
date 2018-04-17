@@ -106,8 +106,10 @@ section {
     padding-left: 10px;
   }
   &__thumb {
+    width: 36px;
+
     @include sp_style {
-      width: 36px;
+      width: 24px;
     }
   }
 }
@@ -138,11 +140,6 @@ section {
   margin: 0 -300px;
 }
 
-strong {
-  font-weight: 700;
-  color: #000000;
-}
-
 .pagetop {
   position: fixed;
   bottom: 40px;
@@ -153,7 +150,7 @@ strong {
   }
 
   img {
-    width: 90px;
+    width: 84px;
 
     @include sp_style {
       width: 70px;
@@ -162,6 +159,10 @@ strong {
   a {
     display: block;
     text-decoration: none;
+
+    @include sp_style {
+      display: none;
+    }
   }
   &:hover {
     opacity: 0.85;

@@ -1,8 +1,16 @@
 .worksItem {
   margin: 20px 0;
+  &:nth-child(odd) {
+    margin-right: 30px;
+
+    @include sp_style {
+      margin-right: 0;
+    }
+  }
   &__thumb {
     img {
-      width: 360px;
+      display: block;
+      width: 100%;
       border-radius: 2px;
       opacity: 1;
       -webkit-transition: .3s ease-in-out;
@@ -14,6 +22,7 @@
       }
       @include sp_style {
         width: 100%;
+        margin: 20px auto 0;
       }
     }
   }

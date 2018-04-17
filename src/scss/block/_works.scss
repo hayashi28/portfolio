@@ -1,6 +1,10 @@
 .works {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+
+  &:ntn-of-type(2n+1) {
+    margin-right: 30px;
+  }
 
   @include tb_style {
     flex-direction: column;
