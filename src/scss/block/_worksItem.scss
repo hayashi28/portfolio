@@ -1,5 +1,5 @@
 .worksItem {
-  margin: 20px 0;
+  margin: 0 0 20px;
   &:nth-child(odd) {
     margin-right: 30px;
 
@@ -15,15 +15,6 @@
       opacity: 1;
       -webkit-transition: .3s ease-in-out;
       transition: .3s ease-in-out;
-
-      @include tb_style {
-        width: 360px;
-        margin: 20px auto 0;
-      }
-      @include sp_style {
-        width: 100%;
-        margin: 20px auto 0;
-      }
     }
   }
   &__heading {
